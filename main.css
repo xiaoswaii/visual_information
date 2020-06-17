@@ -1,3 +1,9 @@
+#header {
+    max-width: 100%;
+    background: transparent url('./header.jpeg') no-repeat center center /cover;
+    margin: 0;
+}
+
 .highcharts-figure, .highcharts-data-table table {
     min-width: 310px; 
     max-width: 800px;
@@ -36,3 +42,33 @@
 .highcharts-data-table tr:hover {
     background: #f1f7ff;
 }
+
+#header .btn {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 30px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+  #header .btn-two {
+    position: absolute;
+    top: 20%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 30px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }
