@@ -24,15 +24,32 @@
 </head>
 <!-- <script>AOS.init();</script> -->
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">Covid-19 Malaysia Information</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#data">Malaysia COVID-19 Data</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#news">Malaysia COVID-19 News(MCO)</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
     <div class="row" id="header">
         <img src="./header.jpeg" style="visibility: hidden;max-width: 100%;" />
-        <a class="btn" data-aos="fade-down" data-aos-duration="3000" data-aos-easing="linear">馬來西亞疫情數據</a>
-        <a class="btn-two" data-aos="fade-down" data-aos-duration="3000" data-aos-easing="linear">馬來西亞行動管制</a>
     </div>
+    <section id="data">
     <div class="container">
-        <figure class="highcharts-figure">
-            <div id="container"></div>
-        </figure>
+        
+            <h1 class="text-center">Malaysia COVID-19 Data</h1>
+            <figure class="highcharts-figure">
+                <div id="container"></div>
+            </figure>
         <div class="row my-3">
             <div class="col">
                 <label>Month</label>
@@ -71,8 +88,12 @@
             </div>
         </div>
     </div>
+    </section>
 
-    <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1pfyh_QqpqGMkqcbt_f2lSvHq3uOmUuYmTDlGNRM1oio&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+    <section id="news">
+        <h1 class="text-center">Malaysia COVID-19 News(MCO)</h1>
+        <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1pfyh_QqpqGMkqcbt_f2lSvHq3uOmUuYmTDlGNRM1oio&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+    </section>
 </body>
 <script src="main.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

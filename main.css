@@ -47,7 +47,7 @@
     position: absolute;
     top: 20%;
     left: 25%;
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
     -ms-transform: translate(-50%, -50%);
     background-color: #555;
     color: white;
@@ -62,7 +62,7 @@
     position: absolute;
     top: 20%;
     left: 75%;
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
     -ms-transform: translate(-50%, -50%);
     background-color: #555;
     color: white;
@@ -71,4 +71,14 @@
     border: none;
     cursor: pointer;
     border-radius: 10px;
+  }
+
+  #news,
+  #data {
+      padding-top: 10%;
+      padding-bottom: 3%;
+  }
+
+  #data {
+      background-color: #FFE6E6;
   }

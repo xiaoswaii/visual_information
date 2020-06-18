@@ -84,7 +84,7 @@ function classifyData(wholeData,choosenMonth,choosenType,chartType,choosenEffect
                 alpha: 15,
                 beta: 15,
                 depth: 50
-            }
+            },
         },
         title: {
             text: `Covid-19 in Malaysia:${choosenTypeWord} of ${dict[choosenMonth]}`
@@ -121,8 +121,8 @@ function classifyData(wholeData,choosenMonth,choosenType,chartType,choosenEffect
         },
         series: [{
             name: choosenTypeWord,
-            data: sourceData
-    
+            data: sourceData,
+            color: '#FF0000'
         }]
     });
 }
