@@ -139,7 +139,11 @@ $( "#selectedType" ).change(function() {
 
 $( "#selectedChartType" ).change(function() {
     chartType =  $( "#selectedChartType" ).val();
-    classifyData(wholeData,choosenMonth,choosenType,chartType,choosenEffect);
+    if(chartType == 'cylinder'){
+        classifyData(wholeData,choosenMonth,choosenType,chartType,true);
+    }else{
+        classifyData(wholeData,choosenMonth,choosenType,chartType,choosenEffect);
+    }
 });
 
 $( "#selectedEffect" ).change(function() {
